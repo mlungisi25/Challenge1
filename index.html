@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<center>
+	<h1>JavaScript Challenges</h1>
+	<p>Checks two numbers and</p>
+</center>
+
+<center>
+	
+	
+		<input id="xNum" >
+		<br><br>
+		<input id="yNum">
+		<br><br>
+		<button type="button" onclick="checks()">Submit</button>
+	
+	
+<p id="output"> </p>
+<p></p>
+</center>
+
+<script>
+	function checks() 
+{
+	var x, y, sum, ans;
+	
+	x = document.getElementById("xNum").value;
+	y = document.getElementById("yNum").value;
+	
+	if(x == 65 || y == 65) || (x + y == 65){
+		ans="True";
+	}else{
+		ans="False";
+	}
+	    document.getElementById("output").innerHTML = ans;
+}
+</script>
+
+</body>
+</html>
